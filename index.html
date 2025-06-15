@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Message To You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #FFDAB9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .title .text {
+      background: linear-gradient(90deg, #ff416c, #ffb347);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .error {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+      gap: 30px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .pic {
+      max-width: 100%;
+      height: auto;
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .pic:hover {
+      transform: scale(1.05);
+    }
+
+    .txt {
+      font-size: 18px;
+      max-width: 500px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+
+    .txt a {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #052eb6;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .txt a:hover {
+      color: #ff4500;
+    }
+
+    @media (max-width: 768px) {
+      .error {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .txt {
+        font-size: 16px;
+        padding: 0 10px;
+      }
+
+      .title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">
+    <span>🤓</span>
+    <span class="text">TEST!!!</span>
+    <span>🤓</span>
+  </h1>
+
+  <div class="error">
+    <img src="jyoti.avif" alt="jyoti" class="pic" />
+    <p class="txt">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, explicabo. Quisquam, eum aliquam temporibus sequi suscipit odit vel recusandae itaque inventore ipsa? Ad, mollitia nihil laborum sit ipsam minus molestiae! <br>
+      -me <br> 👇 <br>
+      <a href="#">👉 DON'T CLICK ME!!! 👈</a> <br> ☝
+    </p>
+  </div>
+</body>
+</html>
